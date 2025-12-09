@@ -14,7 +14,10 @@ import "./style.scss";
 
 const Page = () => {
   const { data } = useData();
-  const last = data?.events?.[0];
+
+  const last = data?.events
+    ?.slice()
+    .sort((a, b) => new Date(b.date) - new Date(a.date))[0];
   return (
     <>
       <header>
