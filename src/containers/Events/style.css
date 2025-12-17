@@ -1,3 +1,19 @@
 .SelectTitle {
   color: white;
 }
+.Pagination {
+  display: flex;
+  gap: 8px;
+}
+
+.Pagination__link {
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+
+.Pagination__link--active {
+  color: #aaa;
+  pointer-events: none;
+  font-weight: bold;
+}

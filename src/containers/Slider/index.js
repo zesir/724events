@@ -10,7 +10,7 @@ const Slider = () => {
   const byDateDesc =
     data?.focus?.sort((evtA, evtB) =>
       new Date(evtA.date) > new Date(evtB.date) ? -1 : 1
-    ) || []; // fallback à tableau vide si data.focus undefined
+    ) || [];
 
   const nextCard = () => {
     if (byDateDesc.length === 0) return; // protection
